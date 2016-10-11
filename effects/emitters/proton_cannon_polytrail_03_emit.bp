@@ -1,0 +1,13 @@
+TrailEmitterBlueprint {
+	BlueprintId = 'proton_cannon_polytrail_02',
+	Lifetime = -1.00,
+    TrailLength = 1.3,
+    Size = 0.04,
+    SortOrder = 0,
+    BlendMode = 3,
+    TextureRepeatRate = 0.5,
+    LODCutoff = 160,
+	RepeatTexture = [[/textures/particles/plasma_alpha_04.dds]],
+	RampTexture = [[/textures/particles/ramp_reacton_01.dds]],
+}
+

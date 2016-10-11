@@ -1,0 +1,1021 @@
+---Aeon
+--Building
+-T1
+[uab0101]
+  -BuildRate = 20->30
+  -BuildTime = 300->250
+-T2
+[uab0201]
+  -BuildCostMass = 800->533
+  -BuildRate = 40->60
+[uab0202]
+  -BuildCostMass = 630->420
+[uab0203]
+  -BuildCostMass = 1170->780
+[uab1201]
+  -BuildCostMass = 1200->800
+[uab1202] Mex
+  -BuildCostMass = 900->600
+  -ProductionPerSecondMass: 6->4
+[uab2108]
+  -BuildCostMass = 700->467
+[uab2204]
+  -BuildCostMass = 392->261
+[uab2205]
+  -BuildCostMass = 1080->720
+[uab2301]
+  -MainGun.MaxRadius = 50->40
+[uab2303]
+  -BuildCostMass = 2079->1386
+[uab2302]
+  -BuildCostMass = 91500->40667
+[uab2305]
+  -BuildCostMass = 15000->6667
+[xab2307]
+  -BuildCostMass = 270000->120000
+[uab4201]
+  -BuildCostMass = 280->187
+[uab4202]
+  -BuildCostMass = 480->320
+[uab4203]
+  -BuildCostMass = 400->267
+-T3
+[uab0301]
+  -BuildCostMass = 3150->1400
+  -BuildRate = 60->120
+[uab0302]
+  -BuildCostMass = 2750->1222
+[uab0303]
+  -BuildCostMass = 3150->1400
+[uab1301]
+  -BuildCostMass = 3240->1440
+[uab1303]
+  -BuildCostMass: 4600->3066
+  -ProductionPerSecondMass: 18->8
+[uab2304] SAM
+  -BuildCostMass = 800->356
+  -AntiAirMissiles.Damage = 600->900
+  -AntiAirMissiles.MaxRadius = 60->80
+  -AntiAirMissiles.MuzzleSalvoDelay = 0.6->0.3
+  -AntiAirMissiles.MuzzleVelocity = 30->60
+  -AntiAirMissiles.RateOfFire = 0.28->0.5
+[uab3104]
+  -BuildCostMass = 2400->1067
+[uas0305]
+  -BuildCostMass = 400->178
+[uab3201]
+  -BuildCostMass = 180->120
+[xab3301]
+  -BuildCostMass = 3000->1333
+[uab3202]
+  -BuildCostMass = 120->80
+[uab4301]
+  -BuildCostMass = 2400->1067
+[uab4302]
+  -BuildCostMass = 7500->3333
+--Land
+-T1
+[ual0201] Aurora
+  -Health = 140->180
+  -MainGun.MaxRadius = 26->24
+[ual0104] Mobile AA
+  -Health = 200->400
+  -BuildCostEnergy = 140->280
+  -BuildCostMass = 28->56
+  -BuildTime = 140->280
+  -AAGun.Damage = 5->10
+-T2
+[ual0111] MML
+  -BuildCostEnergy = 1500->3000
+  -BuildCostMass = 200->266
+  -BuildTime = 1000->2000
+  -MissileRack.Damage = 600->1800
+[ual0202] Obsidian
+  -Health = 1000->400
+  -ShieldHealth = 1750->1000
+  -BuildCostMass = 360->300
+  -MainGun.Damage = 480->1000
+  -MainGun.MaxRadius = 20->22
+  -MainGun.MuzzleVelocity = 30->40
+  -MainGun.RateOfFire = 0.25->0.125
+[xal0203] Blaze
+  -BuildCostEnergy = 1320->1000
+  -BuildCostMass = 220->147
+  -BuildTime = 880->600
+  -MainGun.Damage = 15->5
+  -MainGun.MaxRadius = 23->15
+[ual0205] AA
+  -BuildCostMass = 160->107
+[ual0307] Shield
+  -BuildCostMass = 144->96
+  -Shield.ShieldMaxHealth = 3800->1200
+  -Shield.ShieldRechargeTime = 26->30
+  -Shield.ShieldRegenRate = 58->300
+  -Shield.ShieldRegenStartTime = 1->0
+-T3
+[ual0303] Harbinger
+  -Health = 4600->1000
+  -Shield.ShieldMaxHealth = 1300->2000
+  -Shield.ShieldRechargeTime = 60->40
+  -Shield.ShieldRegenRate = 9->20
+  -Shield.ShieldRegenStartTime = 3->3
+  -BuildCostMass = 840->420
+  -FrontTurret01.Damage = 300->100
+  -FrontTurret01.MaxRadius = 28->20
+  -FrontTurret01.DamageRadius = nil->1
+[ual0304] Artillery
+  -BuildCostMass = 800->356
+  -MainGun.Damage = 2800
+  -MainGun.DamageRadius = 3->2
+  -MainGun.DoTPulses = 15->0
+  -MainGun.DoTTime = 5->0
+[xal0305] Sniperbot
+  -UniformScale = 0.07->0.1
+  -BuildCostMass = 800->500
+  -SizeX = 0.8->1
+  -SizeY = 1->1.2
+  -SizeZ = 0.6->0.8
+  -MainGun.Damage = 1300->4000
+  -MainGun.MaxRadius = 70->85
+  -MainGun.FiringRandomness = 0->0.6
+[dal0310] AntiShield
+  -BuildCostMass = 420->187
+[ual0401] GC
+  -Health = 99999->150000
+  -BuildCostEnergy = 343750->515625
+  -BuildCostMass = 27500->18333 x1.5
+  -BuildTime = 20625->61875
+  -EyeWeapon.BeamCollisionDelay = 0.1->0.5
+  -EyeWeapon.Damage = 500->4000
+  -EyeWeapon.MaxRadius = 40->30
+--Air
+-T1
+[uaa0101] Scout
+  -RadarRadius = nil->40
+  -VisionRadius = 42->20
+[uaa0102] Int
+  -RadarRadius = nil->20
+  -VisionRadius = 28->0
+[uaa0103] Bomber
+  -RadarRadius = 65->45
+  -VisionRadius = 32->0
+-T2
+[xaa0202] Fighter
+  -BuildCostMass = 200->133
+[uaa0203] Gunship
+  -Health = 1060->848
+  -BuildCostMass = 240->160
+  -RadarRadius = 0->32
+  -VisionRadius = 32->0
+  -Turret.Damage = 13->20
+  -Turret.MuzzleSalvoSize = 4->2
+  -RateOfFire = 1.25->1.00
+[uaa0204] Torpbomber
+  -Health = 820->1640
+  -BuildCostMass = 240->160
+[daa0206] Mercy
+  -Air.TurnSpeed = 0.6->1.0
+  -Health = 10->180
+  -BuildCostEnergy = 6000->3200
+  -BuildCostMass = 300->160
+  -BuildTime = 2000->1000
+  -FuelRechargeRate = 0->2
+  -FuelUseTime = 110->200
+  -Suicide.Damage = 2400->1200
+[uaa0104]
+  -BuildCostMass = 300->200
+-T3
+[uaa0302] Scout
+  -Air.MaxAirspeed = 30->20
+  -Air.MinAirspeed = 25->16
+  -BuildCostMass = 195->87
+[uaa0303] ASF
+  -Air.MaxAirspeed = 25->22
+  -Health = 2500->2000
+  -BuildCostMass = 400->178
+  -VisionRadius = 32->0
+  -RadarRadius = 0->40
+  -Autocannon01.Damage = 135->108
+[uaa0304] Bomber
+  -Health = 3800->9500
+  -BuildCostEnergy = 105000->315000
+  -BuildCostMass = 2100->2799
+  -BuildTime = 8400->25200
+  -Bomb.Damage = 3450->50
+  -Bomb.DamageRadius = 4->14
+  -Bomb.DoTPulses = 0->40
+  -Bomb.DoTTime = 0->25 
+[uaa0310] Czar
+  -Air.MaxAirspeed = 8->3
+  -Health = 58000->140000
+  -BuildCostMass = 45000->20000
+  -SonicPulseBattery1.Damage = 300->400
+  -SonicPulseBattery1.MuzzleVelocity = 50->60
+  -SonicPulseBattery2.Damage = 300->400
+  -SonicPulseBattery2.MuzzleVelocity = 50->60
+  -SonicPulseBattery3.Damage = 300->400
+  -SonicPulseBattery3.MuzzleVelocity = 50->60
+  -SonicPulseBattery4.Damage = 300->400
+  -SonicPulseBattery4.MuzzleVelocity = 50->60
+  -AAFizz01.MuzzleVelocity = 20->40
+  -AAFizz02.MuzzleVelocity = 20->40
+  -DeathImpact.Damage = 10000->4000
+[xaa0305] Restorer
+  -BuildCostMass = 1200->533
+[xaa0306] T3 Torpbomber
+  -BuildCostMass = 1650->733
+--Naval
+-T1
+[uas0102] Air Attack Boat
+  -Damage = 7->14
+-T2
+[uas0201] Destroyer
+  -Health = 7500->6000
+  -BuildCostMass = 2250->1500
+  -AntiTorpedo.DepthCharge.Radius = nil->8
+  -AntiTorpedo.EffectiveRadius = 42->nil
+  -AntiTorpedo.MuzzleSalvoSize = 2->1
+  -AntiTorpedo.MuzzleVelocity = 80->5
+  -AntiTorpedo.RateOfFire = 0.26->1.0
+  -Deleted Waepon: DepthCharge
+[uas0202]
+  -BuildCostMass = 2000->1333
+[uas0203]
+  -BuildCostMass = 1100->733
+-T3
+[uas0302]
+  -BuildCostMass = 9000->4000
+[uas0303]
+  -BuildCostMass = 4000->1778
+[uas0304]
+  -BuildCostMass = 10000->4444
+[uas0306]
+  -BuildCostMass = 8000->3556
+[uas0401] Tempest
+  -Health = 35000->70000
+  -BuildCostMass = 28000->12444
+  -MainGun.Damage = 6000->10000
+  -MainGun.DamageRadius = 5->7
+  -MainGun.MaxRadius = 150->180
+  -MainGun.MinRadius = nil->50
+---Cybran
+--Building
+-T1
+[urb0101]
+  -BuildRate = 20->30
+  -BuildTime = 300->250
+-T2
+[urb0201]
+  -BuildCostMass = 800->533
+  -BuildRate = 40->60
+[urb0202]
+  -BuildCostMass = 630->420
+[urb0203]
+  -BuildCostMass = 1170->780
+[urb1201]
+  -BuildCostMass = 1400->800
+[urb1202] Mex
+  -BuildCostMass = 900->600
+  -ProductionPerSecondMass: 6->4
+[urb2108]
+  -BuildCostMass = 850->261
+[urb2204]
+  -BuildCostMass = 392->261
+[urb2205]
+  -BuildCostMass = 1080->720
+[urb2301]
+  -MainGun.MaxRadius = 50->40
+[urb2303]
+  -BuildCostMass = 1680->1120
+[urb3201]
+  -BuildCostMass = 180->120
+[urb3202]
+  -BuildCostMass = 120->80
+[urb4201]
+  -BuildCostMass = 280->187
+[urb4202]
+  -BuildCostMass = 160->107
+[urb4203]
+  -BuildCostMass = 320->213
+[urb4204]
+  -BuildCostMass = 300->200
+[urb4205]
+  -BuildCostMass = 800->533
+[urb4206]
+  -BuildCostMass = 1200->800
+[urb4207]
+  -BuildCostMass = 1800->1200
+-T3
+[urb0301]
+  -BuildCostMass = 3150->1400
+  -BuildRate = 60->120
+[urb0302]
+  -BuildCostMass = 2750->1222
+[urb0303]
+  -BuildCostMass = 3150->1400
+[urb1301]
+  -BuildCostMass = 3240->1440
+[urb1303]
+  -BuildCostMass: 4600->3066
+  -ProductionPerSecondMass: 18->8
+[urb2304] SAM
+  -BuildCostMass = 800->356
+  -Missile01.Damage = 300->450
+  -Missile01.MaxRadius = 60->80
+  -Missile01.MuzzleSalvoDelay = 0.3->0.2
+  -Missile01.MuzzleVelocity = 30->60
+  -Missile01.RateOfFire = 0.28->0.5
+[urb2302]
+  -BuildCostMass = 87000->38667
+[urb2305]
+  -BuildCostMass = 15000->6667
+[xrb2308]
+  -BuildCostMass = 3000->1333
+[urb3104]
+  -BuildCostMass = 2400->1067
+[urb0305]
+  -BuildCostMass = 480->213
+[xrb3301]
+  -BuildCostMass = 4800->2133
+[urb4302]
+  -BuildCostMass = 7500->3333
+--Land
+-T1
+[url0001] ACU
+StealthGenerator.NewHealth = nil->11000
+[url0103] Artillery
+  -MainGun.Buffs.Duration = 3->1
+  -MainGun.FiringRandomness = 1.5->0.8
+[url0107] Mantis
+  -MaxAcceleration = 3.6->3.7
+  -MaxBrake = 3.6->3.7
+  -MaxSpeed = 3.6->3.7
+  -LaserArms.MuzzleVelocity = 25->35
+[url0104] Mobile AA
+  -Health = 130->260
+  -BuildCostEnergy = 140->280
+  -BuildCostMass = 28->56
+  -BuildTime = 140->280
+  -AAGun.Damage = 8->16
+-T2
+[url0111] MML
+  -BuildCostEnergy = 1500->3000
+  -BuildCostMass = 200->266
+  -BuildTime = 1000->2000
+  -MissileRack.Damage = 200->600
+[url0202] Rhino
+  -Health = 1150->650
+  -BuildCostEnergy = 990->800
+  -BuildCostMass = 198->198
+  -MaxAcceleration = 2.7->3.4
+  -MaxBrake = 2.7->3.4
+  -MaxSpeed = 2.7->3.4
+  -MainGun.MaxRange = 23->21
+[url0203] Wagner
+  -Health = 1450->900
+  -BuildCostMass = 297->250
+  -MaxAcceleration = 3.7->2.8
+  -MaxBrake = 3.7->2.8
+  -MaxSpeed = 3.7->2.8
+  -Bolter.Damage = 50->400
+  -Bolter.MaxRadius = 22->24
+  -Bolter.MuzzleVelocity = 30->40
+  -Bolter.RateOfFire = 0.5->0.125
+  -Deleted Weapon = Rocket
+[url0306] Stealth 
+  -BuildCostMass = 80->53
+[drl0204] Hoplite
+  -Health = 450->320
+  -BuildCostEnergy = 1000->665
+  -BuildCostMass = 200->133
+  -BuildTime = 1000->665
+  -MaxAcceleration = 3.5->3.7
+  -MaxBrake = 3.6->3.7
+  -MaxSpeed = 3.6->3.7
+  -RocketBackpack.Damage = 60->10
+  -RocketBackpack.DamageToShields = nil->300
+  -RocketBackpack.Buffs = {
+                {
+                    Add = {
+                        OnImpact = true,
+                    },
+                    AppliedToTarget = true,
+                    BuffType = 'STUN',
+                    Duration = 2,
+                    Radius = 2,
+                    TargetAllow = 'TECH1,TECH2,TECH3',
+					          TargetDisallow = 'WALL',
+                },
+            },
+  -
+[xrl0302] Firebeetle
+  -BuildCostMass = 300->200
+-T3
+[url0303] Loyalist
+  -Health = 3100->1400
+  -Regenrate = 0->2
+  -BuildCostMass = 480->300
+  -Disintigrator.Damage = 175->100
+  -Disintigrator.MaxRadius = 25->21
+  -HeavyBolter.Damage = 12->10
+  -HeavyBolter.MaxRadius = 25->21
+  -EMP.DamageRadius = 10->6 
+[url0304] Artillery
+  -BuildCostMass = 800->356
+  -MainGun.Damage = 450->800
+  -MainGun.DamageRadius = 7->5
+  -MainGun.Buffs = {
+                {
+                    Add = {
+                        OnImpact = true,
+                    },
+                    AppliedToTarget = true,
+                    BuffType = 'STUN',
+                    Duration = 1,
+                    Radius = 4,
+                    TargetAllow = 'TECH1,TECH2,TECH3',
+					          TargetDisallow = 'WALL',  # added for bug fix [162]
+                },
+            },
+[xrl0305] Brick
+  -Health = 9000->1500
+  -BuildCostMass = 1280->800
+  -Disintigrator.Damage = 150->1000
+  -Disintigrator.FiringRandomness = nil->0.9,
+  -Disintigrator.MaxRadius = 35->40
+  -Disintigrator.MuzzleVelocity = 35->20
+  -Disintigrator.RateOfFire = 2.5->0.75
+[url0401] Scathis
+  -BuildCostMass = 299700->133200
+[url0402] Monkeylord
+  -BuildCostMass = 21000->9333
+  -BuildTime = 15750->31500
+  -MainGun.BeamCollisionDelay = 0.1->0.5
+  -MainGun.Damage = 800->4000
+[xrl0403] Megalith
+  -BuildCostMass = 37500->16667
+--Air
+-T1
+[ura0101] Scout
+  -RadarRadius = nil->40
+  -VisionRadius = 42->20
+[ura0102] Int
+  -RadarRadius = nil->20
+  -VisionRadius = 28->0
+[ura0103] Bomber
+  -RadarRadius = 65->45
+  -VisionRadius = 32->0
+-T2
+[dra0202] Fighter/Bomber
+  -BuildCostMass = 420->280
+  -AntiAirMissiles.Damage = 38->40
+  -AntiAirMissiles.MuzzleSalvoDelay = 0.3->0.1
+  -AntiAirMissiles.RackSalvoReloadTime = 1->0
+  -AntiAirMissiles.TurretPitchRange = 55
+  -GroundMissile.Damage = 150->15
+  -GroundMissile.FiringRandomness = 0.8->1.2
+  -GroundMissile.Buffs = {
+                {
+                    Add = {
+                        OnImpact = true,
+                    },
+                    AppliedToTarget = true,
+                    BuffType = 'STUN',
+                    Duration = 3,
+                    Radius = 2,
+                    TargetAllow = 'TECH1,TECH2,TECH3',
+					          TargetDisallow = 'WALL',
+                },
+            },
+[ura0104]
+  -BuildCostMass = 300->200
+[ura0203] Renegade
+  -Air.MaxAirspeed = 12->13
+  -Health = 1040->650
+  -RadarStealth = nil->true
+  -BuildCostMass = 240->160
+[ura0204]
+  -Health = 800->1600
+  -BuildCostMass = 240->160
+-T3
+[ura0302] Scout
+  -Air.MaxAirspeed = 30->20
+  -Air.MinAirspeed = 25->16
+  -BuildCostMass = 195->87
+[ura0303] ASF
+  -Air.MaxAirspeed = 25->22
+  -BuildCostMass = 400->178
+  -Health = 2450->1960
+  -VisionRadius = 32->0
+  -RadarRadius = 0->40
+  -Missiles1.Damage = 100->80
+  -Missiles2.Damage = 100->80
+[ura0304] Bomber
+  -Health = 3700->9250
+  -BuildCostEnergy = 105000->315000
+  -BuildCostMass = 2100->2799
+  -BuildTime = 8400->25200
+  -Bomb.CarpetBombNumWidthProjectiles = nil->4
+	-Bomb.CarpetAngleSpread = nil->25
+  -Bomb.Damage = 2750->600
+  -Bomb.DamageRadius = 7->3
+[xra0305] Wailer
+  -Health = 5900->2800
+  -BuildCostMass = 1680->747
+  -Cloak = nil->true
+  -Disintegrator01.Damage = 150->250
+  -Disintegrator01.MuzzleVelocity = 40->20
+  -Disintegrator01.RateOfFire = 2->3
+  -Missiles1.Damage = 6->12
+  -Missiles1.MuzzleVelocity = 13->18
+  -Missiles1.MuzzleSalvoSize = 3->6
+  -Missiles1.ProjectilesPerOnFire = 3->6
+[ura0401]
+  -BuildCostMass = 40000->17778
+--Naval
+-T1
+[urs0103] Frigate
+  -AAGun.Damage = 3->6
+-T2
+[urs0201] Destroyer
+  -Health = 6050->4840
+  -BuildCostMass = 2250->1500
+  -AAGun.Damage = 2->6
+  -AAGun.RateOfFire = 1.5->2
+  -AntiTorpedoF.RateOfFire = 0.26->1.0
+[urs0202]
+  -BuildCostMass = 2000->1333
+[xrs0204]
+  -BuildCostMass = 1100->733
+[xrs0205]
+  -BuildCostMass = 600->400
+-T3
+[urs0302]
+  -BuildCostMass = 9000->4000
+[urs0303]
+  -BuildCostMass = 3600->1600
+[urs0304]
+  -BuildCostMass = 11000->4889
+---UEF
+--Building
+-T1
+[ueb0101]
+  -BuildRate = 20->30
+  -BuildTime = 300->250
+-T2
+[ueb0201]
+  -BuildCostMass = 800->533
+  -BuildRate = 40->60
+[ueb0202]
+  -BuildCostMass = 630->420
+[ueb0203]
+  -BuildCostMass = 1170->780
+[ueb1201]
+  -BuildCostMass = 1400->800
+[ueb1202] Mex
+  -BuildCostMass = 900->600
+  -ProductionPerSecondMass: 6->4
+[ueb2108]
+  -BuildCostMass = 800->261
+[ueb2204]
+  -BuildCostMass = 392->261
+[ueb2205]
+  -BuildCostMass = 1080->720
+[ueb2301]
+  -MainGun.MaxRadius = 50->40
+[ueb3201]
+  -BuildCostMass = 180->120
+[ueb3202]
+  -BuildCostMass = 120->80
+[ueb2303]
+  -BuildCostMass = 1890->1260
+[ueb4201]
+  -BuildCostMass = 280->187
+[ueb4202]
+  -BuildCostMass = 600->400
+[ueb4203]
+  -BuildCostMass = 360->240
+-T3
+[ueb0301]
+  -BuildCostMass = 3150->1400
+  -BuildRate = 60->120
+[ueb0302]
+  -BuildCostMass = 2750->1222
+[ueb0303]
+  -BuildCostMass = 3150->1400
+[ueb1301]
+  -BuildCostMass = 3240->1440
+[ueb1303]
+  -BuildCostMass: 4600->3066
+  -ProductionPerSecondMass: 18->8
+[ueb2304] SAM
+  -BuildCostMass = 800->356
+  -MissileRack01.Damage = 200->300
+  -MissileRack01.MaxRadius = 60->80
+  -MissileRack01.MuzzleSalvoDelay = 0.2->0.1
+  -MissileRack01.MuzzleVelocity = 30->60
+  -MissileRack01.RateOfFire = 0.28->0.5
+[ueb2302]
+  -BuildCostMass = 90000->40000
+[ueb2305]
+  -BuildCostMass = 15000->6667
+[xeb2308]
+  -BuildCostMass = 1800->800
+[ueb3104]
+  -BuildCostMass = 2400->1067
+[ues0305]
+  -BuildCostMass = 400->178
+[ueb4301]
+  -BuildCostMass = 3000->1333
+[ueb4302]
+  -BuildCostMass = 7500->3333
+--Land
+-T1
+[uel0104] Mobile AA
+  -Health = 200->400
+  -BuildCostEnergy = 140->280
+  -BuildCostMass = 28->56
+  -BuildTime = 140->280
+  -AAGun.Damage = 8->16
+-T2
+[uel0111] MML
+  -BuildCostEnergy = 1500->3000
+  -BuildCostMass = 200->266
+  -BuildTime = 1000->2000
+  -MissileWeapon.Damage = 300->900
+[uel0202] Pillar
+  -Health = 1500->1200
+  -BuildCostEnergy = 990->1250
+  -BuildCostMass = 198->250
+  -BuildTime = 880->1250
+  -MaxAcceleration = 2.7->2.6
+  -MaxBrake = 2.7->2.6
+  -MaxSpeed = 2.7->2.6
+  -FrontTurret01.Damage = 35->400
+  -FrontTurret01.MuzzleVelocity = 30->40
+  -FrontTurret01.RateOfFire = 0.75->0.1 
+[uel0203] Riptide
+  -Health = 1700->700
+  -BuildCostMass = 363->300
+  -MaxAcceleration = 3.7->4.5
+  -MaxBrake = 3.7->4.5
+  -MaxSpeed = 3.7->4.5
+  -Riotgun01.Damage = 13.5->8
+[uel0307] shield
+  -BuildCostMass = 120->80
+[del0204] Mongoose
+  -Health = 650->350
+  -BuildCostMass = 200->200
+  -MaxAcceleration = 3.5->2.8
+  -MaxBrake = 3.6->2.8
+  -MaxSpeed = 3.6->2.8
+  -GatlingCannon.FiringRandomness = 0.4->0.2
+  -GatlingCannon.MuzzleVelocity = 25->35
+  -Grenade.Damage = 65->45
+  -Grenade.DamageRadius = 2->3
+-T3
+[uel0303] Titan
+  -Health = 1200->400
+  -Shield.ShieldMaxHealth = 2200->800
+  -Shield.ShieldRechargeTime = 60->50
+  -Shield.ShieldRegenRate = 9->50
+  -Shield.ShieldRegenStartTime = 3->0
+  -BuildCostMass = 480->300
+  -HeavyPlasma01.Damage = 50->40
+  -HeavyPlasma01.RateOfFire = 3->2
+  -HeavyPlasma01
+[uel0304] Artillery
+  -BuildCostMass = 800->356
+  -MainGun.Damage = 750->1400
+  -MainGun.DamageRadius = 4->3
+[xel0305] Percival
+  -Health = 9300->2000
+  -BuildCostMass = 1280->800
+  -PlasmaCannon01.Damage = 1600->6000
+  -PlasmaCannon01.MaxRadius = 35->40
+  -PlasmaCannon01.MuzzleVelocity = 35->20
+  -PlasmaCannon01.RateOfFire = 0.25->0.125
+[xel0306] MML
+  -BuildCostMass = 400->400
+  -MissileWeapon.Damage = 800->1200
+[uel0401]
+  -BuildCostMass = 28000->12444
+--Air
+-T1
+[uea0101] Scout
+  -RadarRadius = nil->40
+  -VisionRadius = 42->20
+[uea0102] Int
+  -RadarRadius = nil->20
+  -VisionRadius = 28->0
+[uea0103] Bomber
+  -RadarRadius = 65->45
+  -VisionRadius = 32->0
+-T2
+[dea0202] Fighter/Bomber
+  -BuildCostMass = 420->280
+  -LeftBeam.Damage = 75->150
+  -LeftBeam.RateOfFire = 1->0.4
+  -RightBeam.Damage = 75->150
+  -RightBeam.RateOfFire = 1->0.4
+[uea0104]
+  -BuildCostMass = 300->200
+[uea0203] Striker
+  -Air.MaxAirspeed = 12->10
+  -Health = 1100->1000
+  -BuildCostMass = 240->160
+[uea0204]
+  -Health = 860->1720
+  -BuildCostMass = 240->160
+-T3
+[uea0302] Scout
+  -Air.MaxAirspeed = 30->20
+  -Air.MinAirspeed = 25->16
+  -BuildCostMass = 300->200
+[uea0303] ASF
+  -Air.MaxAirspeed = 25->22
+  -Health = 2600->2080
+  -BuildCostMass = 400->178
+  -VisionRadius = 32->0
+  -RadarRadius = 0->40
+  -LeftBeam.Damage = 200->160
+  -RightBeam.Damage = 200->160
+[uea0304]Bomber
+  -Health = 4000->10000
+  -BuildCostEnergy = 105000->315000
+  -BuildCostMass = 933->2799
+  -BuildTime = 840->25200
+  -Damage = 3000->1000
+  -CarpetBombNumWidthProjectiles = nil->3
+	-CarpetAngleSpread = nil->15
+  -DamageRadius = 6->4
+[uea0305] Broadsword
+  -Health = 6000->5000
+  -BuildCostMass = 1680->747
+  -Plasma01.Damage = 100->250
+  -Plasma01.MuzzleVelocity = 40->10
+  -AAGun.Damage = 2->10
+  -AAGun.RateOfFire = 0.75->2
+[xea0306]
+  -BuildCostMass = 1400->622
+--Naval
+-T1
+[ues0103] Frigate
+  -JamRadius.Max = 70->nil
+  -JamRadius.Min = 70->nil
+  -JamRadius.JammerBlips = 5->nil
+  -AAGun.Damage = 7->14
+-T2
+[ues0201] Destroyer
+  -Health = 7200->5760
+  -BuildCostMass = 2250->1500
+  -FrontTurret02.Damage = 10->14
+  -FrontTurret02.RateOfFire = 0.7->1.0
+  -AntiTorpedo.RateOfFire = 0.1->1.0
+[ues0203]
+  -BuildCostMass = 2000->1333
+[xes0104]
+  -BuildCostMass = 900->600
+[xes0205]
+  -BuildCostMass = 1300->867
+-T3
+[ues0302]
+  -BuildCostMass = 9000->4000
+[ues0304]
+  -BuildCostMass = 10000->4444
+[xes0307]
+  -BuildCostMass = 6000->2667
+[ues0401]
+  -Health = 40000->60000
+  -BuildCostMass = 12000->5333
+  -MissileRack01.Damage = 280-> 560
+  -MissileRack01.EffectiveRadius = 57->nil
+  -MissileRack01.MaxRadius = 60->80
+  -MissileRack01.MuzzleVelocity = 30->60
+  -MissileRack02.Damage = 280-> 560
+  -MissileRack02.EffectiveRadius = 57->nil
+  -MissileRack02.MaxRadius = 60->80
+  -MissileRack02.MuzzleVelocity = 30->60
+  -MissileRack03.Damage = 280-> 560
+  -MissileRack03.EffectiveRadius = 57->nil
+  -MissileRack03.MaxRadius = 60->80
+  -MissileRack03.MuzzleVelocity = 30->60
+---Seraphim
+--Building
+-T1
+[xsb0101]
+  -BuildRate = 20->30
+  -BuildTime = 300->250
+-T2
+[xsb0201]
+  -BuildCostMass = 800->533
+  -BuildRate = 40->60
+[xsb0202]
+  -BuildCostMass = 630->420
+[xsb0203]
+  -BuildCostMass = 1170->780
+[xsb1301]
+  -BuildCostMass = 1400->800
+[xsb1202] Mex
+  -BuildCostMass = 900->600
+  -ProductionPerSecondMass: 6->4
+[xsb2108]
+  -BuildCostMass = 825->261
+[xsb2204]
+  -BuildCostMass = 392->261
+[xsb2205]
+  -BuildCostMass = 1080->720
+[xsb2303]
+  -BuildCostMass = 1995->887
+[xsb3201]
+  -BuildCostMass = 180->120
+[xsb3202]
+  -BuildCostMass = 180->120
+[xsb4201]
+  -BuildCostMass = 280->187
+[xsb4202]
+  -BuildCostMass = 700->467
+[xsb4203]
+  -BuildCostMass = 360->252
+-T3
+[xsb0301]
+  -BuildCostMass = 3150->1400
+  -BuildRate = 60->120
+[xsb0302]
+  -BuildCostMass = 2750->1222
+[xsb0303]
+  -BuildCostMass = 3150->1400
+[xsb1301]
+  -BuildCostMass = 3240->1440
+[xsb1303]
+  -BuildCostMass: 4600->3066
+  -ProductionPerSecondMass: 18->8
+[xsb2301]
+  -MainGun.MaxRadius = 50->40
+[xsb2304]
+  -BuildCostMass = 800->356
+  -AntiAirMissiles.Damage = 600->900
+  -AntiAirMissiles.MaxRadius = 60->80
+  -AntiAirMissiles.MuzzleSalvoDelay = 0.6->0.4
+  -AntiAirMissiles.RateOfFire = 0.28->0.5
+[xsb2302]
+  -BuildCostMass = 88500->39333
+[xsb3104]
+  -BuildCostMass = 2400->1067
+[xsb2305]
+  -BuildCostMass = 15000->6667
+[xsb4301]
+  -BuildCostMass = 3600->1600
+[xsb4302]
+  -BuildCostMass = 7500->3333
+--Land
+-T1
+[xsl0104] Mobile AA
+  -Health = 200->400
+  -BuildCostEnergy = 140->280
+  -BuildCostMass = 28->56
+  -BuildTime = 140->280
+  -AAGun.Damage = 4->8
+-T2
+[xsl0111] MML
+  -BuildCostEnergy = 1500->3000
+  -BuildCostMass = 200->266
+  -BuildTime = 1000->2000
+  -MissileWeapon.Damage = 405->1215
+[xsl0202] Chickenbot
+  -Health = 2500->1400
+  -BuildCostMass = 360->240
+  -MaxAcceleration = 2.5->3.0
+  -MaxBrake = 2.5->3.0
+  -MaxSpeed = 2.5->3.0
+  -MainGun.Damage = 35->25
+  -MainGun.MaxRadius = 26->18
+[xsl0203] Hovertank
+  -Health = 1300->1100
+  -BuildCostMass = 220->250
+  -MaxAcceleration = 3.7->3.0
+  -MaxBrake = 3.7->3.0
+  -MaxSpeed = 3.7->3.0
+  -TauCannon01.Damage = 175->800
+  -TauCannon01.MaxRadius = 18->22
+  -TauCannon01.MuzzleVelocity = 30->40
+  -TauCannon01.RateOfFire = 0.25->0.125
+-T3
+[xsl0303] Tank
+  -Health = 6700->5000
+  -BuildCostEnergy = 9600->14000
+  -BuildCostMass = 840->800
+  -BuildTime = 3600->4800
+  -Weapons changed completly
+[xsl0304] Artillery
+  -BuildCostMass = 800->356
+  -MainGun.Damage = 700->500
+  -MainGun.DamageRadius = 6->2
+  -MainGun.RateOfFire = 0.1->0.25
+[xsl0305] Sniperbot
+  -BuildCostMass = 800->356
+[xsl0307] Shield
+  -BuildCostMass = 800->356
+[xsl0401] Ythotha
+  -Health = 67000->100500
+  -BuildCostEnergy = 312500->468750
+  -BuildCostMass = 25000->16667
+  -BuildTime = 18750->56250
+  -EyeWeapon.Damage = 8000->12000
+  -EyeWeapon.MaxRadius = 45->35
+  -LeftArm.Damage = 550->825
+  -LeftArm.MaxRadius = 45->35
+  -RightArm.Damage = 1200->1800
+  -RightArm.MaxRadius = 45->35
+  -LeftAA.Damage = 25->50
+  -LeftAA.FiringRandomness = 3.5->0.5
+  -LeftAA.MuzzleVelocity = 20->40
+  -RightAA.Damage = 25->50
+  -RightAA.FiringRandomness = 3.5->0.5
+  -RightAA.MuzzleVelocity = 20->40  
+--Air
+-T1
+[xsa0101]
+  -RadarRadius = nil->40
+  -VisionRadius = 42->20
+[xsa0102]
+  -RadarRadius = nil->20
+  -VisionRadius = 28->0
+[xsa0103]
+  -RadarRadius = 65->45
+  -VisionRadius = 32->0
+-T2
+[xsa0202] Fighter/Bomber
+  -Air.KRoll = 1->2
+  -BuildCostMass = 300->200
+  -ShleoAAGun01.Tolerance = 0->1
+  -ShleoAAGun01.TurretPitchRange = 55->80
+  -ShleoAAGun01.TrackingRadius = 0->1.25
+  -ShleoAAGun02.Tolerance = 0->1
+  -ShleoAAGun02.TurretPitchRange = 55->80
+  -ShleoAAGun02.TrackingRadius = 0->1.25
+  -Bomb.Damage = 1175->300
+  -Bomb.DamageRadius = 4->3
+  -Bomb.FiringRandomness = 0->0.1
+[xsa0104] Transport
+  -BuildCostMass = 420->280
+[xsa0203] Gunship
+  -BuildCostMass = 240->160
+  -TurretLeft.Damage = 12->0
+  -TurretLeft.Velocity = 40->30
+  -TurretLeft.RateOfFire = 1.25->0.6
+  -TurretLeft.MuzzleSalvoDelay = 0.2->0
+  -TurretLeft.MuzzleSalvoSize = 2->1
+  -TurretLeft.ProjectilesPerOnFire = 4->2
+  -TurretRight.Damage = 12->0
+  -TurretRight.Velocity = 40->30
+  -TurretRight.RateOfFire = 1.25->0.6
+  -TurretRight.MuzzleSalvoDelay = 0.2->0
+  -TurretRight.MuzzleSalvoSize = 2->1
+  -TurretRight.ProjectilesPerOnFire = 4->2
+  -Added procentual damage in  projectile
+[xsa0204]
+  -Health = 840->1680
+  -BuildCostMass = 240->160
+-T3
+[xsa0302] Scout
+  -Air.MaxAirspeed = 30->20
+  -Air.MinAirspeed = 25->16
+  -BuildCostMass = 195->87
+[xsa0303] ASF
+  -Air.MaxAirspeed = 25->22
+  -Health = 2550->2040
+  -BuildCostMass = 400->178
+  -VisionRadius = 32->0
+  -RadarRadius = 0->40
+  -Autocannon01.Damage = 135->108
+[xsa0304] Bomber
+  -Health = 3900->9750
+  -BuildCostEnergy = 105000->315000
+  -BuildCostMass = 933->2799
+  -BuildTime = 840->25200
+[xsa0402] Ahwassha
+  -BuildCostMass = 48000->21333
+--Naval
+-T1
+[xss0103] Frigate
+  -AntiAir.Damage = 2->4
+-T2
+[xss0201] Destroyer
+  -Health = 6900->5520
+  -BuildCostMass = 2250->1500
+  -AntiTorpedo.DepthCharge.Radius = nil->8
+  -AntiTorpedo.LeadTarget = false->nil
+  -AntiTorpedo.MinRadius = 15->5
+  -AntiTorpedo.MuzzleVelocity = 80->5
+  -AntiTorpedo.ProjectileLifetime = 7->4
+  -AntiTorpedo = Everything after "RackBones" to uas0201 stats
+[xss0202] Cruiser
+  -BuildCostMass = 2000->1333
+-T3
+[uss0302]
+  -BuildCostMass = 9000->4000
+[uss0303]
+  -BuildCostMass = 4400->1956
+[uss0304]
+  -BuildCostMass = 3000->1333

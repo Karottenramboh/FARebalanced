@@ -1,0 +1,23 @@
+Changes:
+-Added 	FlatReduction parameter at line 88 in UAL0303_unit.bp
+-Added passing of newly created values for FlatReduction and MaxDamage on shields:
+	at Unit.lua:
+
+		self.MyShield = Shield { ... 
+			MaxDamage = bpShield.MaxDamage or nil,
+			FlatReduction = bpShield.FlatReduction or 0, }
+
+	at shield.lua:
+
+		self.FlatReduction = spec.FlatReduction
+		self.MaxDamage = spec.MaxDamage
+
+-Adjusted damage calculation of shields to include FlatReduction and MaxDamage:
+	at shield.lua:
+
+		if not self.FlatReduction then self.FlatReduction = 0 end
+		amount = amount - self.FlatReduction
+		
+		if amount < 1 then amount = 1 end
+		
+		if self.MaxDamage and not(self.MaxDamage == 0) and amount > self.MaxDamage then amount = self.MaxDamage end

@@ -1,0 +1,368 @@
+---Aeon
+--Land
+-T1
+[Aurora]
+{
+-less range
+-more hp
+}
+-T2
+[Obsidian]
+{
+-high damage
+-very low rof
+-slow
+-debuff enemy dps #scrapped
+}
+[Blaze]
+{
+-tanky
+-low range
+-slow
+-low damage
+-enemy speed debuff
+}
+-T3
+[Harbinger]
+{
+-shield with flat damage reduction
+-slow
+-aoe
+}
+--Air
+-T1
+-T2
+[Mercy]
+{
+-more hp
+-more fuel
+-more aoe
+-less damage
+}
+[Gunship]
+{
+-lower dps than usual
+-when attacking shield, damages everything under it
+}
+-T3
+[Bomber]
+{
+-flares
+-more hp
+-less damage
+-carpet bombing
+}
+--Naval
+-T1
+[Sub]
+{
+-Cloak
+}
+-T2
+-T3
+[Battleship]
+{
+-Heavy Battlecruiser
+}
+[Carrier]
+{
+-intel
+-better aa
+-maybe drone-carrier
+}
+[sub]
+{
+-mercies missiles
+}
+[Tempest]
+{
+-bomardment
+}
+
+---Cybran
+--Land
+-T1
+-T2
+[MML]
+{
+-more expensive
+-more damage
+}
+[Hoplite]
+{
+-splash
+-slow
+-low damage
+-short stun
+}
+[Rhino]
+{
+-slower
+-much hp
+-average damage
+}
+[Wagner]
+{
+-low rof
+-much hp
+-high damage
+}
+[Firebeetle]
+{
+-Baneling
+}
+-T3
+[Loyalist]
+{
+-less hp
+-less splash on the stun
+}
+[Brick]
+{
+-slow projectiles
+-more damage
+-less rof
+}
+--Air
+-T1
+-T2
+[Gunship]
+{
+-minus 40% hp
+-faster
+-stealth
+}
+-T3
+[Bomber]
+{
+-flares
+-more hp
+-less damage
+-carpet bombing
+}
+[Gunship]
+{
+-faster
+-jamming + cloak
+-slower projectiles
+}
+--Naval
+-T1
+[Sub]
+{
+-Cloak
+}
+-T2
+[Cruiser]
+{
+-buff aa
+-intel
+}
+[Destroyer]
+{
+-antisub
+}
+-T3
+[Battleship]
+{
+-Hybrid
+}
+[Carrier]
+{
+-intel
+-better aa
+-maybe drone-carrier
+}
+[sub]
+{
+-bombardment
+}
+
+---UEF
+--Land
+-T1
+-T2
+[MML]
+{
+-more expensive
+-more damage
+}
+[Mongoose]
+{
+-high rof
+-slower
+-less damage
+}
+[Pillar]
+{
+-viel hp
+-low rof
+-medium damage
+}
+[Riptide]
+{
+-expensive
+-high speed
+-enough damage for harrass duties
+}
+-T3
+[Titan]
+{
+-fast
+-fast reg schild
+-hit and run
+}
+[Percival]
+{
+-ver low rof
+-very high damage
+-slow projectile
+}
+--Air
+-T1
+-T2
+[Gunship]
+{
+-hp stays
+-slower
+}
+-T3
+[Bomber]
+{
+-flares
+-more hp
+-less damage
+-carpet bombing
+}
+[Gunship]
+{
+-faster
+-slower projectiles
+}
+--Naval
+-T1
+[Sub]
+{
+-Cloak
+}
+-T2
+[Cruiser]
+{
+-intel
+}
+[Destroyer]
+{
+-antitorps
+}
+[Torpboat]
+{
+-anti-sub
+}
+-T3
+[Battleship]
+{
+-Bombardment
+}
+[sub]
+{
+-aoe missiles against t1
+}
+[Atlanis]
+{
+-Very good intel
+-very good aa
+}
+
+---Seraphim
+--Land
+-T1
+-T2
+[Hover-Tank]
+{
+-slow projectile 
+-high damage
+-regenfield with stack, limited
+}
+[Bot]
+{
+-fast
+-less range
+-less hp
+}
+-T3
+[Tank]
+{
+-cheap
+-damage multiplier
+}
+[Sniper]
+{
+-aurora?
+}
+[Shield]
+{
+-slow effect when enemy units enter the bubble
+}
+--Air
+-T1
+-T2
+[Gunships]
+{
+-hp stays
+-more expensive
+-procentual damage with limit
+}
+-T3
+[Bomber]
+{
+-flares
+-more hp
+-less damage
+-carpet bombing
+}
+--Naval
+-T1
+[Sub]
+{
+-Cloak
+}
+-T2
+[Cruiser]
+{
+-intel
+}
+[Destroyer]
+{
+-on_surface: much antitorp
+-under_surface: no antitorp
+-antisub
+}
+-T3
+[Battleship]
+{
+-strategic missiles(Bombardment)
+}
+[Carrier]
+{
+-intel
+-aoe missiles
+}
+[sub]
+{
+-regenfield
+-antitorp(flares)
+-enough dps to kill subs
+}
+---------------------------
+--Building
+-T1
+-T2
+[Mex]
+{
+-mass-income: 6->4  | 1.5 t2 buildings anpassen
+}
+-T3
+[Mex]
+{
+-mass-income: 18->8 | 2.25 t3 buildings anpassen
+}

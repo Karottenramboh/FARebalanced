@@ -1,0 +1,12 @@
+TrailEmitterBlueprint {
+	BlueprintId = 'phalanx_munition_polytrail_01',
+	Lifetime = -1.00,
+    TrailLength = 0.6,
+    Size = 0.1,
+    SortOrder = 0,
+    BlendMode = 3,
+    TextureRepeatRate = 0.6,
+    LODCutoff = -1,
+  RampTexture = [[/textures/particles/ramp_riotgun_02.dds]],
+	RepeatTexture = [[/textures/particles/beam_blue_04.dds]],
+}

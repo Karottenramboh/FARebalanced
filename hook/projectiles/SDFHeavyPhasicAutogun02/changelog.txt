@@ -1,0 +1,14 @@
+
+OnImpact = function(self, TargetType, TargetEntity)
+			SHeavyPhasicAutogun02.OnImpact(self, TargetType, TargetEntity)
+			self.newdamage = 	TargetEntity:GetMaxHealth() * 0.02
+      if self.newdamage > 250 then
+         self.newdamage = 250
+      end
+      if self.newdamage > TargetEntity:GetHealth() then 
+          Damage(self, {0,0,0}, TargetEntity, TargetEntity:GetHealth(), 'Normal')
+      else
+          Damage(self, {0,0,0}, TargetEntity, self.newdamage, 'Normal')
+      end
+      #LOG(self.newdamage)		
+end,

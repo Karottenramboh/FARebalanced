@@ -1,0 +1,17 @@
+name = "FARebalanced"
+uid = "0586de95-05d9-4ff4-bee2-62dd9a0aa54d"
+version = 1
+copyright = "Copyright © 2012, Dolan"
+description = "gooby pls"
+author = "theZJ, CaptainBenz and Karottenrambo"
+url = "http://faforever.com"
+icon = "/mods/FARebalanced/icon.dds"
+selectable = true
+enabled = true
+exclusive = false
+ui_only = false
+requires = {}
+requiresNames = {}
+conflicts = {}
+before = {}
+after = {}

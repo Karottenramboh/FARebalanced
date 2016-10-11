@@ -1,0 +1,17 @@
+MeshBlueprint {
+    LODs = {
+        {
+            MeshName = '/effects/Entities/Sphere01/Sphere01_lod0.scm',
+            AlbedoName = 'CybranShield02_Albedo.dds',
+            #SecondaryName = '/effects/Entities/DEB4303AntiArtilleryShield01/DEB4303AntiArtilleryShield01_Secondary.dds',
+            SpecularName = 'CybranShield02_Specular.dds',
+            NormalsName = 'CybranShield02_Normals.dds',
+            LookupName = 'ramp_shield_01.dds',
+            ShaderName = 'ShieldCybran',
+            LODCutoff = 1000,
+        },
+    },
+    IconFadeInZoom = 4,
+    SortOrder = 1000,
+    StraddleWater = true,
+}
