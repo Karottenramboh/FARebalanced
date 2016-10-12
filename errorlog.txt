@@ -12,66 +12,6 @@ WARNING: GetResource: Invalid name ""
 WARNING: GetResource: Invalid name ""
 WARNING: GetResource: Invalid name ""
 WARNING: GetResource: Invalid name ""
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
 WARNING: Error running OnStopBeingBuilt script in Entity urb4202 at 14a31b08: ...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): attempt to call method `SetShieldRatio' (a nil value)
          stack traceback:
          	...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): in function `UpdateShieldRatio'
@@ -112,61 +52,6 @@ WARNING: Error running OnStopBeingBuilt script in Entity urb4206 at 22330208: ..
          	...gramdata\faforever\gamedata\lua.nx2\lua\sim\unit.lua(5957): in function `OnStopBeingBuilt'
          	...data\faforever\gamedata\lua.nx2\lua\defaultunits.lua(129): in function `OnStopBeingBuilt'
          	...\gamedata\units.scd\units\urb4206\urb4206_script.lua(23): in function <...\gamedata\units.scd\units\urb4206\urb4206_script.lua:22>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'ValidateAssist':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "ValidateAssist"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'ValidateAssist':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "ValidateAssist"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'ValidateAssist':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "ValidateAssist"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
 WARNING: Error running OnStopBeingBuilt script in Entity xrl0305 at 21b64d08: ...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): attempt to call method `SetShieldRatio' (a nil value)
          stack traceback:
          	...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): in function `UpdateShieldRatio'
@@ -204,28 +89,3 @@ WARNING: Error running OnStopBeingBuilt script in Entity xrl0305 at 21f28d08: ..
          	...gramdata\faforever\gamedata\lua.nx2\lua\sim\unit.lua(7733): in function `CreateShield'
          	...gramdata\faforever\gamedata\lua.nx2\lua\sim\unit.lua(5957): in function `OnStopBeingBuilt'
          	...data\faforever\gamedata\lua.nx2\lua\defaultunits.lua(1570): in function <...data\faforever\gamedata\lua.nx2\lua\defaultunits.lua:1569>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
