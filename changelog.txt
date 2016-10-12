@@ -666,9 +666,9 @@ StealthGenerator.NewHealth = nil->11000
 [del0204] Mongoose
   -Health = 650->350
   -BuildCostMass = 200->200
-  -MaxAcceleration = 3.5->2.8
-  -MaxBrake = 3.6->2.8
-  -MaxSpeed = 3.6->2.8
+  -MaxAcceleration = 3.5->2.6
+  -MaxBrake = 3.6->2.6
+  -MaxSpeed = 3.6->2.6
   -GatlingCannon.FiringRandomness = 0.4->0.2
   -GatlingCannon.MuzzleVelocity = 25->35
   -Grenade.Damage = 65->45
