@@ -1,91 +1,61 @@
+WARNING: Duplicate definition of console command ""
+WARNING: Duplicate definition of console command ""
+WARNING: Duplicate definition of console command ""
+WARNING: Duplicate definition of console command ""
+WARNING: Duplicate definition of console command ""
+WARNING: Duplicate definition of console command ""
+WARNING: Duplicate definition of console command ""
+WARNING: Error loading WaveBank '/sounds/blackopswb.xwb': Invalid data
+WARNING: Error loading soundbank '/sounds/blackopssb.xsb': Invalid data
+WARNING: Error running HandleEvent script in CScriptObject at 11697000: ...ce\gamedata\mohodata.scd\lua\system\localization.lua(129): invalid option to `format'
+         stack traceback:
+         	[C]: in function `format'
+         	...ce\gamedata\mohodata.scd\lua\system\localization.lua(129): in function `LOCF'
+         	...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua(2782): in function `SetTextLine'
+         	...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua(2801): in function `CalcVisible'
+         	...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua(2757): in function `ScrollSetTop'
+         	...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua(2743): in function `ScrollLines'
+         	...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua(2817): in function <...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua:2811>
+WARNING: Error running HandleEvent script in CScriptObject at 11697000: ...ce\gamedata\mohodata.scd\lua\system\localization.lua(129): invalid option to `format'
+         stack traceback:
+         	[C]: in function `format'
+         	...ce\gamedata\mohodata.scd\lua\system\localization.lua(129): in function `LOCF'
+         	...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua(2782): in function `SetTextLine'
+         	...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua(2801): in function `CalcVisible'
+         	...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua(2757): in function `ScrollSetTop'
+         	...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua(2743): in function `ScrollLines'
+         	...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua(2817): in function <...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua:2811>
+WARNING: Error running HandleEvent script in CScriptObject at 11697000: ...ce\gamedata\mohodata.scd\lua\system\localization.lua(129): invalid option to `format'
+         stack traceback:
+         	[C]: in function `format'
+         	...ce\gamedata\mohodata.scd\lua\system\localization.lua(129): in function `LOCF'
+         	...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua(2782): in function `SetTextLine'
+         	...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua(2801): in function `CalcVisible'
+         	...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua(2757): in function `ScrollSetTop'
+         	...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua(2743): in function `ScrollLines'
+         	...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua(2817): in function <...ta\faforever\gamedata\lua.nx2\lua\ui\lobby\lobby.lua:2811>
 Initializing unit blueprint for uab4201
-    Initializing field Weapon of RUnitBlueprint at 0x15e64400
-        Initializing field RangeCategory of RUnitBlueprintWeapon at 0x159bdd00
-            WARNING: Invalid value for UnitWeaponRangeCategory at 0x159bdd40: string 
-WARNING:  NUM PROPS = 3171
-WARNING: BuffField: [..repr(bp.Name)..] Duration must be specified for a buff field buff.
-WARNING: BuffField: [..repr(bp.Name)..] You almost certainly want buff fields to be Stack-type REPLACE.
-WARNING: BuffField: [..repr(bp.Name)..] Duration must be specified for a buff field buff.
-WARNING: BuffField: [..repr(bp.Name)..] You almost certainly want buff fields to be Stack-type REPLACE.
+    Initializing field Weapon of RUnitBlueprint at 0x156db400
+        Initializing field RangeCategory of RUnitBlueprintWeapon at 0x1316e600
+            WARNING: Invalid value for UnitWeaponRangeCategory at 0x1316e640: string 
+WARNING:  NUM PROPS = 9762
 WARNING: GetResource: Invalid name ""
 WARNING: GetResource: Invalid name ""
 WARNING: GetResource: Invalid name ""
-WARNING: GetResource: Invalid name ""
-WARNING: GetResource: Invalid name ""
-WARNING: Error running OnStopBeingBuilt script in Entity urb4202 at 14a31b08: ...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): attempt to call method `SetShieldRatio' (a nil value)
+WARNING: Error running OnRelease script in <deleted object>: ...mdata\faforever\gamedata\lua.nx2\lua\maui\button.lua(84): Game object has been destroyed
          stack traceback:
-         	...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): in function `UpdateShieldRatio'
-         	...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(830): in function `OnCreate'
-         	...ed alliance\gamedata\mohodata.scd\lua\sim\entity.lua(15): in function `postinitfn'
-         	...data\faforever\gamedata\lua.nx2\lua\system\class.lua(262): in function <...data\faforever\gamedata\lua.nx2\lua\system\class.lua:246>
-         	...gramdata\faforever\gamedata\lua.nx2\lua\sim\unit.lua(7733): in function `CreateShield'
-         	...gramdata\faforever\gamedata\lua.nx2\lua\sim\unit.lua(5957): in function `OnStopBeingBuilt'
-         	...data\faforever\gamedata\lua.nx2\lua\defaultunits.lua(129): in function `OnStopBeingBuilt'
-         	...\gamedata\units.scd\units\urb4202\urb4202_script.lua(23): in function <...\gamedata\units.scd\units\urb4202\urb4202_script.lua:22>
-WARNING: Error running OnStopBeingBuilt script in Entity urb4204 at 19824908: ...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): attempt to call method `SetShieldRatio' (a nil value)
+         	[C]: in function `Play'
+         	...mdata\faforever\gamedata\lua.nx2\lua\maui\button.lua(84): in function <...mdata\faforever\gamedata\lua.nx2\lua\maui\button.lua:78>
+WARNING: Error running OnRelease script in <deleted object>: ...mdata\faforever\gamedata\lua.nx2\lua\maui\button.lua(84): Game object has been destroyed
          stack traceback:
-         	...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): in function `UpdateShieldRatio'
-         	...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(830): in function `OnCreate'
-         	...ed alliance\gamedata\mohodata.scd\lua\sim\entity.lua(15): in function `postinitfn'
-         	...data\faforever\gamedata\lua.nx2\lua\system\class.lua(262): in function <...data\faforever\gamedata\lua.nx2\lua\system\class.lua:246>
-         	...gramdata\faforever\gamedata\lua.nx2\lua\sim\unit.lua(7733): in function `CreateShield'
-         	...gramdata\faforever\gamedata\lua.nx2\lua\sim\unit.lua(5957): in function `OnStopBeingBuilt'
-         	...data\faforever\gamedata\lua.nx2\lua\defaultunits.lua(129): in function `OnStopBeingBuilt'
-         	...\gamedata\units.scd\units\urb4204\urb4204_script.lua(23): in function <...\gamedata\units.scd\units\urb4204\urb4204_script.lua:22>
-WARNING: Error running OnStopBeingBuilt script in Entity urb4205 at 20ba4f08: ...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): attempt to call method `SetShieldRatio' (a nil value)
+         	[C]: in function `Play'
+         	...mdata\faforever\gamedata\lua.nx2\lua\maui\button.lua(84): in function <...mdata\faforever\gamedata\lua.nx2\lua\maui\button.lua:78>
+WARNING: Error running sim lua callback function 'AutoOvercharge':
+         ...data\faforever\gamedata\lua.nx2\lua\defaultunits.lua(2123): attempt to call method `SetAutoOvercharge' (a nil value)
          stack traceback:
-         	...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): in function `UpdateShieldRatio'
-         	...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(830): in function `OnCreate'
-         	...ed alliance\gamedata\mohodata.scd\lua\sim\entity.lua(15): in function `postinitfn'
-         	...data\faforever\gamedata\lua.nx2\lua\system\class.lua(262): in function <...data\faforever\gamedata\lua.nx2\lua\system\class.lua:246>
-         	...gramdata\faforever\gamedata\lua.nx2\lua\sim\unit.lua(7733): in function `CreateShield'
-         	...gramdata\faforever\gamedata\lua.nx2\lua\sim\unit.lua(5957): in function `OnStopBeingBuilt'
-         	...data\faforever\gamedata\lua.nx2\lua\defaultunits.lua(129): in function `OnStopBeingBuilt'
-         	...\gamedata\units.scd\units\urb4205\urb4205_script.lua(23): in function <...\gamedata\units.scd\units\urb4205\urb4205_script.lua:22>
-WARNING: Error running OnStopBeingBuilt script in Entity urb4206 at 22330208: ...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): attempt to call method `SetShieldRatio' (a nil value)
-         stack traceback:
-         	...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): in function `UpdateShieldRatio'
-         	...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(830): in function `OnCreate'
-         	...ed alliance\gamedata\mohodata.scd\lua\sim\entity.lua(15): in function `postinitfn'
-         	...data\faforever\gamedata\lua.nx2\lua\system\class.lua(262): in function <...data\faforever\gamedata\lua.nx2\lua\system\class.lua:246>
-         	...gramdata\faforever\gamedata\lua.nx2\lua\sim\unit.lua(7733): in function `CreateShield'
-         	...gramdata\faforever\gamedata\lua.nx2\lua\sim\unit.lua(5957): in function `OnStopBeingBuilt'
-         	...data\faforever\gamedata\lua.nx2\lua\defaultunits.lua(129): in function `OnStopBeingBuilt'
-         	...\gamedata\units.scd\units\urb4206\urb4206_script.lua(23): in function <...\gamedata\units.scd\units\urb4206\urb4206_script.lua:22>
-WARNING: Error running OnStopBeingBuilt script in Entity xrl0305 at 21b64d08: ...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): attempt to call method `SetShieldRatio' (a nil value)
-         stack traceback:
-         	...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): in function `UpdateShieldRatio'
-         	...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(830): in function `OnCreate'
-         	...ed alliance\gamedata\mohodata.scd\lua\sim\entity.lua(15): in function `postinitfn'
-         	...data\faforever\gamedata\lua.nx2\lua\system\class.lua(262): in function <...data\faforever\gamedata\lua.nx2\lua\system\class.lua:246>
-         	...gramdata\faforever\gamedata\lua.nx2\lua\sim\unit.lua(7733): in function `CreateShield'
-         	...gramdata\faforever\gamedata\lua.nx2\lua\sim\unit.lua(5957): in function `OnStopBeingBuilt'
-         	...data\faforever\gamedata\lua.nx2\lua\defaultunits.lua(1570): in function <...data\faforever\gamedata\lua.nx2\lua\defaultunits.lua:1569>
-WARNING: Error running sim lua callback function 'ValidateAssist':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "ValidateAssist"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running sim lua callback function 'Rebuild':
-         ...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): No callback named "Rebuild"
-         stack traceback:
-         	[C]: in function `error'
-         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(222): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:217>
-WARNING: Error running OnStopBeingBuilt script in Entity xrl0305 at 23918408: ...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): attempt to call method `SetShieldRatio' (a nil value)
-         stack traceback:
-         	...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): in function `UpdateShieldRatio'
-         	...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(830): in function `OnCreate'
-         	...ed alliance\gamedata\mohodata.scd\lua\sim\entity.lua(15): in function `postinitfn'
-         	...data\faforever\gamedata\lua.nx2\lua\system\class.lua(262): in function <...data\faforever\gamedata\lua.nx2\lua\system\class.lua:246>
-         	...gramdata\faforever\gamedata\lua.nx2\lua\sim\unit.lua(7733): in function `CreateShield'
-         	...gramdata\faforever\gamedata\lua.nx2\lua\sim\unit.lua(5957): in function `OnStopBeingBuilt'
-         	...data\faforever\gamedata\lua.nx2\lua\defaultunits.lua(1570): in function <...data\faforever\gamedata\lua.nx2\lua\defaultunits.lua:1569>
-WARNING: Error running OnStopBeingBuilt script in Entity xrl0305 at 21f28d08: ...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): attempt to call method `SetShieldRatio' (a nil value)
-         stack traceback:
-         	...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(875): in function `UpdateShieldRatio'
-         	...rogramdata\faforever\gamedata\lua.nx2\lua\shield.lua(830): in function `OnCreate'
-         	...ed alliance\gamedata\mohodata.scd\lua\sim\entity.lua(15): in function `postinitfn'
-         	...data\faforever\gamedata\lua.nx2\lua\system\class.lua(262): in function <...data\faforever\gamedata\lua.nx2\lua\system\class.lua:246>
-         	...gramdata\faforever\gamedata\lua.nx2\lua\sim\unit.lua(7733): in function `CreateShield'
-         	...gramdata\faforever\gamedata\lua.nx2\lua\sim\unit.lua(5957): in function `OnStopBeingBuilt'
-         	...data\faforever\gamedata\lua.nx2\lua\defaultunits.lua(1570): in function <...data\faforever\gamedata\lua.nx2\lua\defaultunits.lua:1569>
+         	...data\faforever\gamedata\lua.nx2\lua\defaultunits.lua(2123): in function `SetAutoOvercharge'
+         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(49): in function `fn'
+         	...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua(16): in function <...data\faforever\gamedata\lua.nx2\lua\simcallbacks.lua:13>
+WARNING: Error resolving cue 'UAL0301_Move_UW_Step' in bank 'UAL'
+WARNING: Desync at beat 18452 tick 1845.3095703125
+WARNING: Using non-existant muzzle bone in aim manipulator for unit uas0302

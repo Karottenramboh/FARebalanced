@@ -244,16 +244,22 @@
   -BuildCostMass = 1100->733
 -T3
 [uas0302]
-  -BuildCostMass = 9000->4000
+  -MaxHealth = 48000->24000
+  -BuildCostMass = 9000->6000
+  -BuildTime = 18000->26000,
 [uas0303]
   -BuildCostMass = 4000->1778
 [uas0304]
   -BuildCostMass = 10000->4444
-[uas0306]
-  -BuildCostMass = 8000->3556
+[xas0306]
+  -BuildCostMass = 8000->4500
+  -BuildTime = 18000->22000
+  -MaxHealth = 15000->10000
 [uas0401] Tempest
-  -Health = 35000->70000
-  -BuildCostMass = 28000->12444
+  -Health = 35000->35000
+  -BuildTime = 12000->24000
+  -BuildCostMass = 28000->20000
+  -BuildCostEnergy = 350000->500000
   -MainGun.Damage = 6000->10000
   -MainGun.DamageRadius = 5->7
   -MainGun.MaxRadius = 150->180
@@ -551,7 +557,9 @@ StealthGenerator.NewHealth = nil->11000
   -BuildCostMass = 600->400
 -T3
 [urs0302]
-  -BuildCostMass = 9000->4000
+  -MaxHealth = 47000->23500
+  -BuildCostMass = 9000->6000
+  -BuildTime = 18000->26000
 [urs0303]
   -BuildCostMass = 3600->1600
 [urs0304]
@@ -780,11 +788,15 @@ StealthGenerator.NewHealth = nil->11000
   -BuildCostMass = 1300->867
 -T3
 [ues0302]
-  -BuildCostMass = 9000->4000
+  -MaxHealth = 51000->25500
+  -BuildCostMass = 9000->6000
+  -BuildTime = 18000->26000,
 [ues0304]
   -BuildCostMass = 10000->4444
 [xes0307]
-  -BuildCostMass = 6000->2667
+  -Health = 25000 -> 15000
+  -BuildCostMass = 6000->4500
+  -BuildTime = 12000->18000,
 [ues0401]
   -Health = 40000->60000
   -BuildCostMass = 12000->5333
@@ -1013,9 +1025,11 @@ StealthGenerator.NewHealth = nil->11000
 [xss0202] Cruiser
   -BuildCostMass = 2000->1333
 -T3
-[uss0302]
-  -BuildCostMass = 9000->4000
-[uss0303]
+[xss0302]
+  -MaxHealth = 49000->24500
+  -BuildCostMass = 4000->6000
+  -BuildTime = 18000->26000
+[xss0303]
   -BuildCostMass = 4400->1956
-[uss0304]
+[xss0304]
   -BuildCostMass = 3000->1333
