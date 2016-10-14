@@ -27,6 +27,9 @@ local DEFAULT_OPTIONS = {
     ShieldRegenRate = 1,
     ShieldRegenStartTime = 5,
     PassOverkillDamage = false,
+	FlatReduction = 0,
+	MaxDamage = 0,
+	CanTakeDamage = true,
 }
 
 Shield = Class(moho.shield_methods,Entity) {
@@ -54,7 +57,7 @@ Shield = Class(moho.shield_methods,Entity) {
         self.Owner = spec.Owner
         self.MeshBp = spec.Mesh
         self.MeshZBp = spec.MeshZ
-		LOG("Our spec says: FlatReduction = " .. (spec.FlatReduction or "nil"))
+		--LOG("Our spec says: FlatReduction = " .. (spec.FlatReduction or "nil"))
 		self.FlatReduction = spec.FlatReduction or 0
 		self.MaxDamage = spec.MaxDamage or nil
         self.CanTakeDamage = loccantakedamage
@@ -194,7 +197,7 @@ Shield = Class(moho.shield_methods,Entity) {
     ApplyDamage = function(self, instigator, amount, vector, dmgType, doOverspill)
         if self.Owner ~= instigator then
 		
-			LOG("Applying flat reduction of " .. self.FlatReduction .. ". New Damage taken = " .. amount-(self.FlatReduction or 0))
+			--LOG("Applying flat reduction of " .. self.FlatReduction .. ". New Damage taken = " .. amount-(self.FlatReduction or 0))
 			if not self.FlatReduction then self.FlatReduction = 0 end
 			amount = amount - self.FlatReduction
 			
