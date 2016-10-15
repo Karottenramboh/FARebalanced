@@ -108,7 +108,7 @@ Merge = true,
     },
     Economy = {
         BuildCostEnergy = 31625,
-        BuildCostMass = 4600,
+        BuildCostMass = 2000,
         BuildTime = 2875,
         MaintenanceConsumptionPerSecondEnergy = 54,
         ProductionPerSecondMass = 8,
