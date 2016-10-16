@@ -263,11 +263,11 @@ Merge = true,
         TransportClass = 4,
     },
     Veteran = {
-        Level1 = 50,
-        Level2 = 100,
-        Level3 = 150,
-        Level4 = 200,
-        Level5 = 250,
+        Level1 = 100,
+        Level2 = 200,
+        Level3 = 350,
+        Level4 = 500,
+        Level5 = 700,
     },
     Weapon = {
         {

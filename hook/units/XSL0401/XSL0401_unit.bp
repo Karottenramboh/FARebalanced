@@ -195,9 +195,9 @@ Merge = true,
         UniformScale = 0.05,
     },
     Economy = {
-        BuildCostEnergy = 468750,
+        BuildCostEnergy = 568750,
         BuildCostMass = 16667,
-        BuildTime = 56250,
+        BuildTime = 26250,
     },
     General = {
         Category = 'Direct Fire',
