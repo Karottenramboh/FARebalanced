@@ -51,8 +51,8 @@ function BlockFormation( formationUnits )
     # Put small units (Size 1 through 3) in front of the formation
     for i in smallUnitsList do
         local offsetX = (( math.mod(i,width)  - math.floor(width/2) ) * 2) + 1
-        local offsetY = ( math.floor(i/width) - math.f
-		LOG("Delay taken = "..delay)
+        local offsetY = ( math.floor(i/width) - math.floor(length/2) ) * 2
+        local delay = 0.1 + (math.floor(i/width) * 3)
         table.insert(FormationPos, { offsetX, -offsetY, categories.ALLUNITS, delay, rotate })
     end
 
@@ -61,7 +61,7 @@ function BlockFormation( formationUnits )
         local adjIndex = smallUnits + i
         local offsetX = (( math.mod(adjIndex,width)  - math.floor(width/2) ) * 2) + 1
         local offsetY = ( math.floor(adjIndex/width) - math.floor(length/2) ) * 2
-        local delay = (math.floor(adjIndex/wid
+        local delay = 0.1 + (math.floor(adjIndex/width) * 3)
         table.insert(FormationPos, { offsetX, -offsetY, categories.ALLUNITS, delay, rotate })
     end
 
