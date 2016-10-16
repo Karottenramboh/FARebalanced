@@ -20,6 +20,7 @@ local EmitterProjectile = DefaultProjectileFile.EmitterProjectile
 local OnWaterEntryEmitterProjectile = DefaultProjectileFile.OnWaterEntryEmitterProjectile
 local DepthCharge = import('/lua/defaultantiprojectile.lua').DepthCharge
 local util = import('utilities.lua')
+local NukeProjectile = DefaultProjectileFile.NukeProjectile
 local RandomInt = util.GetRandomInt
 
 #added 14.07.2012
@@ -480,7 +481,7 @@ SUallCavitationTorpedo = Class(SinglePolyTrailProjectile) {
 #------------------------------------------------------------------------
 #  SERAPHIM Inaino STRATEGIC MISSILE
 #------------------------------------------------------------------------
-SIFInainoStrategicMissile = Class(EmitterProjectile) {
+SIFInainoStrategicMissile = Class(NukeProjectile, EmitterProjectile) {
     ###BeamName = '/effects/emitters/missile_exhaust_fire_beam_01_emit.bp',
 	ExitWaterTicks = 9,
 	FxExitWaterEmitter = EffectTemplate.DefaultProjectileWaterImpact,
@@ -499,7 +500,7 @@ SIFInainoStrategicMissile = Class(EmitterProjectile) {
 #------------------------------------------------------------------------
 #  SERAPHIM EXPERIMENTAL STRATEGIC MISSILE
 #------------------------------------------------------------------------
-SExperimentalStrategicMissile = Class(MultiPolyTrailProjectile) {
+SExperimentalStrategicMissile = Class(NukeProjectile, MultiPolyTrailProjectile) {
     ###BeamName = '/effects/emitters/missile_exhaust_fire_beam_01_emit.bp',
 	ExitWaterTicks = 9,
 	FxExitWaterEmitter = EffectTemplate.DefaultProjectileWaterImpact,

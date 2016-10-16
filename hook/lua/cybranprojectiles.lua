@@ -22,6 +22,7 @@ local DepthCharge = import('/lua/defaultantiprojectile.lua').DepthCharge
 local NullShell = DefaultProjectileFile.NullShell
 local EffectTemplate = import('/lua/EffectTemplates.lua')
 local RandomFloat = import('/lua/utilities.lua').GetRandomFloat
+local NukeProjectile = DefaultProjectileFile.NukeProjectile
 
 #added 14.07.2012
 local SamFlares = import('/lua/defaultantiprojectile.lua').SamFlares 
@@ -384,7 +385,7 @@ CHeavyElectronBolterProjectile = Class(MultiPolyTrailProjectile) {
 #------------------------------------------------------------------------
 #  TERRAN SUB-LAUNCHED CRUISE MISSILE PROJECTILES
 #------------------------------------------------------------------------
-CEMPFluxWarheadProjectile = Class(SingleBeamProjectile) {
+CEMPFluxWarheadProjectile = Class(NukeProjectile, SingleBeamProjectile) {
     BeamName = '/effects/emitters/missile_exhaust_fire_beam_01_emit.bp',
     FxInitialAtEntityEmitter = {},
     FxUnderWaterTrail = {'/effects/emitters/missile_cruise_munition_underwater_trail_01_emit.bp',},
