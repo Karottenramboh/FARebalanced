@@ -243,10 +243,11 @@
 [uas0203]
   -BuildCostMass = 1100->733
 -T3
-[uas0302]
+[uas0302]Battleship
   -MaxHealth = 48000->24000
   -BuildCostMass = 9000->6000
   -BuildTime = 18000->26000,
+  -MainWeapon-MaxRadius:100->80
 [uas0303]
   -BuildCostMass = 4000->1778
 [uas0304]
@@ -256,13 +257,13 @@
   -BuildTime = 18000->22000
   -MaxHealth = 15000->10000
 [uas0401] Tempest
-  -Health = 35000->35000
+  -Health = 35000->25000
   -BuildTime = 12000->24000
   -BuildCostMass = 28000->20000
   -BuildCostEnergy = 350000->500000
   -MainGun.Damage = 6000->10000
   -MainGun.DamageRadius = 5->7
-  -MainGun.MaxRadius = 150->180
+  -MainGun.MaxRadius = 150->160
   -MainGun.MinRadius = nil->50
 ---Cybran
 --Building
@@ -556,10 +557,11 @@ StealthGenerator.NewHealth = nil->11000
 [xrs0205]
   -BuildCostMass = 600->400
 -T3
-[urs0302]
+[urs0302]BS
   -MaxHealth = 47000->23500
   -BuildCostMass = 9000->6000
   -BuildTime = 18000->26000
+  -MainWeapon = 128->100
 [urs0303]
   -BuildCostMass = 3600->1600
 [urs0304]
@@ -791,6 +793,7 @@ StealthGenerator.NewHealth = nil->11000
   -MaxHealth = 51000->25500
   -BuildCostMass = 9000->6000
   -BuildTime = 18000->26000,
+  -MainWeapon-MaxRadius = 150->115
 [ues0304]
   -BuildCostMass = 10000->4444
 [xes0307]
@@ -1029,7 +1032,10 @@ StealthGenerator.NewHealth = nil->11000
   -MaxHealth = 49000->24500
   -BuildCostMass = 4000->6000
   -BuildTime = 18000->26000
+  -MainWeapon = 128->100
 [xss0303]
   -BuildCostMass = 4400->1956
 [xss0304]
   -BuildCostMass = 3000->1333
+  -Torpedo-MaxRadius = 70->50
+  -Torpedo-Damage = 335->250,
