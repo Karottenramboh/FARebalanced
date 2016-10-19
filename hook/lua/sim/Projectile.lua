@@ -34,7 +34,6 @@ Projectile = Class(moho.projectile_methods, Entity) {
     end,
 
     DoDamage = function(self, instigator, DamageData, targetEntity)
-		LOG('*DEBUG: DAMAGE', self:GetBlueprint().BlueprintId)
         local damage = DamageData.DamageAmount
         if damage and damage > 0 then
             local radius = DamageData.DamageRadius
@@ -78,7 +77,6 @@ Projectile = Class(moho.projectile_methods, Entity) {
                 end
             end
         end
-		LOG('*DEBUG: DAMAGE', self.InnerRing, self.OuterRing)
         if self.InnerRing and self.OuterRing then
             local pos = self:GetPosition()
             self.InnerRing:DoNukeDamage(self.Launcher, pos, self.Brain, self.Army)
