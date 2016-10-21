@@ -15,6 +15,7 @@ local DefaultProjectileWeapon = WeaponFile.DefaultProjectileWeapon
 local DefaultBeamWeapon = WeaponFile.DefaultBeamWeapon
 local CarpetBombingWeapon = WeaponFile.CarpetBombingWeapon
 local CollisionBeamFile = import('defaultcollisionbeams.lua')
+local OverchargeWeapon = WeaponFile.OverchargeWeapon
 local Explosion = import('defaultexplosions.lua')
 local EffectTemplate = import('/lua/EffectTemplates.lua')
 local Util = import('utilities.lua')
@@ -38,8 +39,9 @@ CDFHvyProtonCannonWeapon = Class(DefaultProjectileWeapon) {
     FxMuzzleFlash = EffectTemplate.CHvyProtonCannonMuzzleflash,
 }
 
-CDFOverchargeWeapon = Class(DefaultProjectileWeapon) {
+CDFOverchargeWeapon = Class(OverchargeWeapon) {
     FxMuzzleFlash = EffectTemplate.CMolecularRipperOverChargeFlash01,
+    DesiredWeaponLabel = 'RightRipper'
 }
 
 # COMMANDER ENHANCEMENT WEAPON!

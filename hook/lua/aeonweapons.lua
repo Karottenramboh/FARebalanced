@@ -14,6 +14,7 @@ local DisruptorBeamCollisionBeam = CollisionBeamFile.DisruptorBeamCollisionBeam
 local QuantumBeamGeneratorCollisionBeam = CollisionBeamFile.QuantumBeamGeneratorCollisionBeam
 local PhasonLaserCollisionBeam = CollisionBeamFile.PhasonLaserCollisionBeam
 local TractorClawCollisionBeam = CollisionBeamFile.TractorClawCollisionBeam
+local OverchargeWeapon = WeaponFile.OverchargeWeapon
 local Explosion = import('defaultexplosions.lua')
 
 local KamikazeWeapon = WeaponFile.KamikazeWeapon
@@ -41,8 +42,9 @@ ADFReactonCannon = Class(DefaultProjectileWeapon) {
                            '/effects/emitters/reacton_cannon_muzzle_flash_03_emit.bp',},
 }
 
-ADFOverchargeWeapon = Class(DefaultProjectileWeapon) {
+ADFOverchargeWeapon = Class(OverchargeWeapon) {
     FxMuzzleFlash = EffectTemplate.ACommanderOverchargeFlash01,
+	DesiredWeaponLabel = 'RightDisruptor'
 }
 
 

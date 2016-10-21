@@ -14,6 +14,7 @@ local BareBonesWeapon = WeaponFile.BareBonesWeapon
 local DefaultProjectileWeapon = WeaponFile.DefaultProjectileWeapon
 local DefaultBeamWeapon = WeaponFile.DefaultBeamWeapon
 local CarpetBombingWeapon = WeaponFile.CarpetBombingWeapon
+local OverchargeWeapon = WeaponFile.OverchargeWeapon
 local GinsuCollisionBeam = CollisionBeams.GinsuCollisionBeam
 local OrbitalDeathLaserCollisionBeam = CollisionBeams.OrbitalDeathLaserCollisionBeam
 local EffectTemplate = import('/lua/EffectTemplates.lua')
@@ -49,8 +50,9 @@ TDFHeavyPlasmaGatlingCannonWeapon = Class(DefaultProjectileWeapon) {
 }
 
 
-TDFOverchargeWeapon = Class(DefaultProjectileWeapon) {
+TDFOverchargeWeapon = Class(OverchargeWeapon) {
     FxMuzzleFlash = EffectTemplate.TCommanderOverchargeFlash01,
+	DesiredWeaponLabel = 'RightZephyr'
 }
 
 TDFMachineGunWeapon = Class(DefaultProjectileWeapon) {
