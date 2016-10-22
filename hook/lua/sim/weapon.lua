@@ -1,14 +1,21 @@
-#****************************************************************************
-#**
-#**  File     :  /lua/sim/Weapon.lua
-#**  Author(s):  John Comes
-#**
-#**  Summary  : The base weapon class for all weapons in the game.
-#**
-#**  Copyright © 2005 Gas Powered Games, Inc.  All rights reserved.
-#****************************************************************************
+-- ****************************************************************************
+-- **
+
+
+-- **  File     :  /lua/sim/Weapon.lua
+-- **  Author(s):  John Comes
+-- **
+
+-- **  Summary  : The base weapon class for all weapons in the game.
+-- **
+
+-- **  Copyright ï¿½ 2005 Gas Powered Games, Inc.  All rights reserved.
+-- ****************************************************************************
+
 
 local Entity = import('/lua/sim/Entity.lua').Entity
+local NukeDamage = import('/lua/sim/NukeDamage.lua').NukeAOE
+local Set = import('/lua/system/setutils.lua')
 
 Weapon = Class(moho.weapon_methods) {
     __init = function(self, unit)
@@ -24,13 +31,17 @@ Weapon = Class(moho.weapon_methods) {
             self:SetupTurret()
         end
         self:SetWeaponPriorities()
-        self.Disabledbf = {}
+        self.DisabledBuffs = {}
+
         self.DamageMod = 0
         self.DamageRadiusMod = 0
+        self.NumTargets = 0
         local bp = self:GetBlueprint()
-        #->changed 02.08.2012
+		#->changed 02.08.2012
         self.DamageAmount = bp.Damage + (self.DamageMod or 0)
         #<-
+
+
         local initStore = bp.InitialProjectileStorage
         if initStore and initStore > 0 then
             if bp.MaxProjectileStorage and bp.MaxProjectileStorage < initStore then
@@ -61,10 +72,10 @@ Weapon = Class(moho.weapon_methods) {
         local precedence = bp.AimControlPrecedence or 10
         local pitchBone2
         local muzzleBone2
-        if bp.TurretBoneDualPitch and bp.TurretBoneDualPitch != '' then
+        if bp.TurretBoneDualPitch and bp.TurretBoneDualPitch ~= '' then
             pitchBone2 = bp.TurretBoneDualPitch
         end
-        if bp.TurretBoneDualMuzzle and bp.TurretBoneDualMuzzle != '' then
+        if bp.TurretBoneDualMuzzle and bp.TurretBoneDualMuzzle ~= '' then
             muzzleBone2 = bp.TurretBoneDualMuzzle
         end
         if not (self.unit:ValidateBone(yawBone) and self.unit:ValidateBone(pitchBone) and self.unit:ValidateBone(muzzleBone)) then
@@ -100,7 +111,7 @@ Weapon = Class(moho.weapon_methods) {
                 self.AimControl:SetPrecedence(precedence)
                 if bp.RackSlavedToTurret and table.getn(bp.RackBones) > 0 then
                     for k, v in bp.RackBones do
-                        if v.RackBone != pitchBone then
+                        if v.RackBone ~= pitchBone then
                             local slaver = CreateSlaver(self.unit, v.RackBone, pitchBone)
                             slaver:SetPrecedence(precedence-1)
                             self.unit.Trash:Add(slaver)
@@ -117,7 +128,7 @@ Weapon = Class(moho.weapon_methods) {
         local turretyawmin, turretyawmax, turretyawspeed
         local turretpitchmin, turretpitchmax, turretpitchspeed
 
-        #SETUP MANIPULATORS AND SET TURRET YAW, PITCH AND SPEED
+        -- SETUP MANIPULATORS AND SET TURRET YAW, PITCH AND SPEED
         if self:GetBlueprint().TurretYaw and self:GetBlueprint().TurretYawRange then
             turretyawmin, turretyawmax = self:GetTurretYawMinMax()
         else
@@ -204,7 +215,7 @@ Weapon = Class(moho.weapon_methods) {
         return self:GetBlueprint().TurretPitchSpeed
     end,
 
-    OnFire = function(self) 
+    OnFire = function(self)
         local bp = self:GetBlueprint()
         if bp.Audio.Fire then
             self:PlaySound(bp.Audio.Fire)
@@ -216,12 +227,13 @@ Weapon = Class(moho.weapon_methods) {
     end,
 
     OnGotTarget = function(self)
-        #LOG('Got the target')
+
         if self.DisabledFiringBones and self.unit.Animator then
             for key, value in self.DisabledFiringBones do
                 self.unit.Animator:SetBoneEnabled(value, false)
             end
         end
+        self.NumTargets = self.NumTargets + 1
     end,
 
     OnLostTarget = function(self)
@@ -229,6 +241,11 @@ Weapon = Class(moho.weapon_methods) {
             for key, value in self.DisabledFiringBones do
                 self.unit.Animator:SetBoneEnabled(value, true)
             end
+        end
+
+        self.NumTargets = self.NumTargets - 1
+        if self.NumTargets < 0 then
+            self.NumTargets = 0
         end
     end,
 
@@ -287,11 +304,12 @@ Weapon = Class(moho.weapon_methods) {
     GetDamageTable = function(self)
         local weaponBlueprint = self:GetBlueprint()
         local damageTable = {}
+        damageTable.InitialDamageAmount = weaponBlueprint.InitialDamage or 0
         damageTable.DamageRadius = weaponBlueprint.DamageRadius + (self.DamageRadiusMod or 0)
-        #->changed 02.08.2012
-        #damageTable.DamageAmount = weaponBlueprint.Damage + (self.DamageMod or 0)
-        #<-
-        damageTable.DamageAmount = self.DamageAmount
+
+        damageTable.DamageAmount = weaponBlueprint.Damage + (self.DamageMod or 0)
+
+
         damageTable.DamageType = weaponBlueprint.DamageType
         damageTable.DamageFriendly = weaponBlueprint.DamageFriendly
         if damageTable.DamageFriendly == nil then
@@ -302,63 +320,79 @@ Weapon = Class(moho.weapon_methods) {
         damageTable.DoTPulses = weaponBlueprint.DoTPulses
         damageTable.MetaImpactAmount = weaponBlueprint.MetaImpactAmount
         damageTable.MetaImpactRadius = weaponBlueprint.MetaImpactRadius
-        #Add buff
+        damageTable.ArtilleryShieldBlocks = weaponBlueprint.ArtilleryShieldBlocks
+        -- Add buff
         damageTable.Buffs = {}
-        if weaponBlueprint.Buffs != nil then
+        if weaponBlueprint.Buffs ~= nil then
             for k, v in weaponBlueprint.Buffs do
-                damageTable.Buffs[k] = {}
-                damageTable.Buffs[k] = v
-            end   
-        end     
-        #remove disabled buff
-        if (self.Disabledbf != nil) and (damageTable.Buffs != nil) then
-            for k, v in damageTable.Buffs do
-                for j, w in self.Disabledbf do
-                    if v.BuffType == w then
-                        #Removing buff
-                        table.remove( damageTable.Buffs, k )
-                    end
+                if not self.DisabledBuffs[v.BuffType] then
+
+                    damageTable.Buffs[k] = v
                 end
-            end  
-        end  
+                
+            end   
+        end
+
+
+
+
+
+
+
+
+
+
+
+
+
         return damageTable
     end,
 
     CreateProjectileForWeapon = function(self, bone)
         local proj = self:CreateProjectile(bone)
         local damageTable = self:GetDamageTable()
+
         if proj and not proj:BeenDestroyed() then
             proj:PassDamageData(damageTable)
             local bp = self:GetBlueprint()
 
             if bp.NukeOuterRingDamage and bp.NukeOuterRingRadius and bp.NukeOuterRingTicks and bp.NukeOuterRingTotalTime and
                 bp.NukeInnerRingDamage and bp.NukeInnerRingRadius and bp.NukeInnerRingTicks and bp.NukeInnerRingTotalTime then
-                local data = {
-                    NukeOuterRingDamage = bp.NukeOuterRingDamage or 10,
-                    NukeOuterRingRadius = bp.NukeOuterRingRadius or 40,
-                    NukeOuterRingTicks = bp.NukeOuterRingTicks or 20,
-                    NukeOuterRingTotalTime = bp.NukeOuterRingTotalTime or 10,
-        
-                    NukeInnerRingDamage = bp.NukeInnerRingDamage or 2000,
-                    NukeInnerRingRadius = bp.NukeInnerRingRadius or 30,
-                    NukeInnerRingTicks = bp.NukeInnerRingTicks or 24,
-                    NukeInnerRingTotalTime = bp.NukeInnerRingTotalTime or 24,
-                }
-                proj:PassData(data)
+                proj.InnerRing = NukeDamage()
+                proj.InnerRing:OnCreate(bp.NukeInnerRingDamage, bp.NukeInnerRingRadius, bp.NukeInnerRingTicks, bp.NukeInnerRingTotalTime)
+                proj.OuterRing = NukeDamage()
+                proj.OuterRing:OnCreate(bp.NukeOuterRingDamage, bp.NukeOuterRingRadius, bp.NukeOuterRingTicks, bp.NukeOuterRingTotalTime)
+                
+                -- Need to store these three for later, in case the missile lands after the launcher dies
+                proj.Launcher = self.unit
+                proj.Army = self.unit:GetArmy()
+                proj.Brain = self.unit:GetAIBrain()
+
+
+
+
+
+
+
+
+
+
+
+
             end
         end
         return proj
     end,
 
     SetValidTargetsForCurrentLayer = function(self, newLayer)
-        #LOG( 'SetValidTargetsForCurrentLayer, layer = ', newLayer )
+        -- LOG( 'SetValidTargetsForCurrentLayer, layer = ', newLayer )
         local weaponBlueprint = self:GetBlueprint()
         if weaponBlueprint.FireTargetLayerCapsTable then
             if weaponBlueprint.FireTargetLayerCapsTable[newLayer] then
-                #LOG( 'Setting Target Layer Caps to ', weaponBlueprint.FireTargetLayerCapsTable[newLayer] )
+                -- LOG( 'Setting Target Layer Caps to ', weaponBlueprint.FireTargetLayerCapsTable[newLayer] )
                 self:SetFireTargetLayerCaps( weaponBlueprint.FireTargetLayerCapsTable[newLayer] )
             else
-                #LOG( 'Setting Target Layer Caps to None' )
+                -- LOG( 'Setting Target Layer Caps to None' )
                 self:SetFireTargetLayerCaps('None')
             end
         end
@@ -445,43 +479,47 @@ Weapon = Class(moho.weapon_methods) {
 
     DisableBuff = function(self, buffname)
         if buffname then
-            for k, v in self.Disabledbf do
-                if v == buffname then
-                    #this buff is already in the table
-                    return
-                end
-            end
-            
-            #Add to disabled list
-            table.insert(self.Disabledbf, buffname)
+            self.DisabledBuffs[buffname] = true
+
+
+
+
+
+
+
+
+
         else
-            #Error
+            -- Error
+
             error('ERROR: DisableBuff in weapon.lua does not have a buffname') 
         end
     end,
     
     ReEnableBuff = function(self, buffname)
         if buffname then
-            for k, v in self.Disabledbf do
-                if v == buffname then
-                    #Remove from disabled list
-                    table.remove(self.Disabledbf, k)
-                end
-            end
+            self.DisabledBuffs[buffname] = nil
+
+
+
+
+
+
         else
-            #Error 
+            -- Error 
+
             error('ERROR: ReEnableBuff in weapon.lua does not have a buffname') 
         end
     end,
     
-    #Method to mark weapon when parent unit gets loaded on to a transport unit
+    -- Method to mark weapon when parent unit gets loaded on to a transport unit
     SetOnTransport = function(self, transportstate)
         self.onTransport = transportstate
         if not transportstate then
-            #send a message to tell the weapon that the unit just got dropped and needs to restart aim
+            -- send a message to tell the weapon that the unit just got dropped and needs to restart aim
             self:OnLostTarget()
         end
-        #Disable weapon if on transport and not allowed to fire from it
+        -- Disable weapon if on transport and not allowed to fire from it
         if not self.unit:GetBlueprint().Transport.CanFireFromTransport then
             if transportstate then
                 self.WeaponDisabledOnTransport = true
@@ -493,14 +531,14 @@ Weapon = Class(moho.weapon_methods) {
         end        
     end,
 
-    #Method to retreive onTransport information. True if the parent unit has been loaded on to a transport unit
+    -- Method to retreive onTransport information. True if the parent unit has been loaded on to a transport unit
     GetOnTransport = function(self)
         return self.onTransport
     end,
     
-    #This is the function to set a weapon enabled. 
-    #If the weapon is enhabled by an enhancement, this will check to see if the unit has the enhancement before
-    #allowing it to try to be enabled or disabled.
+    -- This is the function to set a weapon enabled. 
+    -- If the weapon is enhabled by an enhancement, this will check to see if the unit has the enhancement before
+    -- allowing it to try to be enabled or disabled.
     SetWeaponEnabled = function(self, enable)
         if not enable then
             self:SetEnabled(enable)
@@ -517,7 +555,7 @@ Weapon = Class(moho.weapon_methods) {
                     end
                 end
             end
-            #Enhancement needed but doesn't have it, don't allow weapon to be enabled.
+            -- Enhancement needed but doesn't have it, don't allow weapon to be enabled.
             return
         end
         self:SetEnabled(enable)
