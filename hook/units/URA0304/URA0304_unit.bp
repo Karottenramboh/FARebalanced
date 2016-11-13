@@ -326,7 +326,7 @@ UnitBlueprint {
             CarpetBombNumWidthProjectiles = 4,
 			      CarpetAngleSpread = 25, #30
             CollideFriendly = false,
-            Damage = 600,
+            Damage = 900,
             DamageFriendly = true,
             DamageRadius = 3,
             DamageType = 'Normal',

@@ -301,7 +301,7 @@ UnitBlueprint {
             BallisticArc = 'RULEUBA_None',
             BombDropThreshold = 3.5,
             CollideFriendly = false,
-            Damage = 1000,
+            Damage = 1500,
             DamageFriendly = true,
 			CarpetBombNumWidthProjectiles = 3,
 			CarpetAngleSpread = 15, #15
