@@ -17,6 +17,9 @@ SDFHeavyPhasicAutogun02 = Class(SHeavyPhasicAutogun02) {
         if self.newdamage > 150 then
            self.newdamage = 150
         end
+		if self.newdamage < 15 then
+           self.newdamage = 15
+        end
         if self.newdamage > TargetEntity:GetHealth() then 
             Damage(self, {0,0,0}, TargetEntity, TargetEntity:GetHealth(), 'Normal')
         else
